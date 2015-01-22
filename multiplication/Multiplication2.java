@@ -27,20 +27,11 @@ public class Multiplication2 {
 	}
 
 	public static MultiplicationCell[][] prepareMatrix(int number1, int number2) {
-
 		// read the length of input numbers
 		int[] num1 = convertNum(number1);
 		int[] num2 = convertNum(number2);
 		int lenNum1 = num1.length;
 		int lenNum2 = num2.length;
-
-		for (int n : num1) {
-			System.out.println(n);
-		}
-
-		for (int n : num2) {
-			System.out.println(n);
-		}
 
 		// 1D array to store the cross product
 		int[] crossProduct = new int[lenNum1 * lenNum2];
